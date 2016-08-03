@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pricing & Profit Calculator</title>
+	<link href="e:/workspace/dimebagdollars/presentation.css" type="text/css" rel="stylesheet" />
+	<meta charset="ISO-8859-1">
+	<meta name="description"
+		content="A pricing and profit calculator"/>
+	<meta http-equiv="pragma"
+		content="no-cache"/>
+<script src="e:/workspace/dimebagdollars/pricecalculator.js"></script>	
+</head>
+	<body>
+		<h1>A simple but awesome calculator for determining weed pricing & profitability</h1>
+			<form name="breakevenForm">
+				Yield(in lbs): <input type="text" name="yield" size="10"><br />
+				Cost($): <input type="text" name="cost" size="10"><br />
+				<input type="button" value="Calculate break even price" onClick="breakeven()"><br />
+<!-- 				Your Break even Price: <input type="text" name="price" size="25"><br /> -->
+				<input type="reset" value="Reset" />
+			</form>
+
+<table>
+<caption>Break-even Prices</caption>
+<tr>
+<th></th>
+<th scope="col">Amount</th>
+<th scope="col">Price</th>
+</tr>
+	<tr>
+	<th></th>
+	<td>Gram</td>
+	<td id="gramBEP"></td>
+	</tr>
+<!-- 	<tr> -->
+<!-- 	<th></th> -->
+<!-- 	<td>Nickel ($5 worth)</td> -->
+<!-- 	<td id="nickelBEP"></td> -->
+<!-- 	</tr> -->
+
+<!-- 	<td>1/8 oz</td> -->
+<!-- 	<td id="gBEP"></td> -->
+<!-- 	<td>1/4 oz</td> -->
+<!-- 	<td id="gBEP"></td> -->
+<!-- 	<td>1/2 oz</td> -->
+<!-- 	<td id="gBEP"></td> -->
+<!-- 	<td>1 oz</td> -->
+<!-- 	<td id="gBEP"></td> -->
+<!-- 	<td>1/4 lb</td> -->
+<!-- 	<td id="gBEP"></td> -->
+<!-- 	<td>1/2 lb</td> -->
+<!-- 	<td id="gBEP"></td> -->
+<!-- 	<td>1 lb</td> -->
+<!-- 	<td id="gBEP"></td> -->
+</table>
+<table>
+<caption>Baggie break even sizes</caption>
+<tr>
+<th></th>
+<th>Name</th>
+<th>Amount</th>
+	<tr>
+	<th></th>
+	<td>Nickel ($5 worth)</td>
+	<td id="nickelBES"></td>
+	</tr>
+	<tr>
+	<th></th>
+	<td>Dime</td>
+	<td id="dimeBES"></td>
+	</tr>
+	<tr>
+	<th></th>
+	<td>Dub</td>
+	<td id="dubBES"></td>
+	</tr>
+</table>
+<!-- <a href="http://www.leafly.com">Leafly</a> -->
+	</body>
+</html>
