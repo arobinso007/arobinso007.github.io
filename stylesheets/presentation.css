@@ -1,0 +1,10 @@
+@CHARSET "ISO-8859-1";
+body {
+	font-family: Arial;
+	}
+h1:first-letter{font-size: 200%;}
+h1 {
+	font-family: Georgia;
+	color: DarkCyan;}
+
+	p {font-family: Arial;}
