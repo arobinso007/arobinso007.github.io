@@ -8,7 +8,7 @@
 		content="A pricing and profit calculator"/>
 	<meta http-equiv="pragma"
 		content="no-cache"/>
-	<script type="text/javascript">
+	<script>
 	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
 	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -23,13 +23,13 @@
 			<form name="breakevenForm">
 				Yield(in lbs): <input type="text" name="yield" size="10"><br />
 				Cost($): <input type="text" name="cost" size="10"><br />
-				<input type="button" value="Calculate break even price" onClick="breakeven()"><br />
+				<input type="button" value="Calculate" onClick="breakeven()"><br />
 <!-- 				Your Break even Price: <input type="text" name="price" size="25"><br /> -->
-				<input type="reset" value="Reset" />
+<!-- 				<input type="reset" value="Reset" /> -->
 			</form>
 
-<table>
-<caption>Break-even Prices</caption>
+<table style="float:left">
+<caption>Break even Prices</caption>
 <tr>
 <th></th>
 <th scope="col">Amount</th>
@@ -37,31 +37,46 @@
 </tr>
 	<tr>
 	<th></th>
-	<td>Gram</td>
+	<td>g</td>
 	<td id="gramBEP"></td>
 	</tr>
-<!-- 	<tr> -->
-<!-- 	<th></th> -->
-<!-- 	<td>Nickel ($5 worth)</td> -->
-<!-- 	<td id="nickelBEP"></td> -->
-<!-- 	</tr> -->
-
-<!-- 	<td>1/8 oz</td> -->
-<!-- 	<td id="gBEP"></td> -->
-<!-- 	<td>1/4 oz</td> -->
-<!-- 	<td id="gBEP"></td> -->
-<!-- 	<td>1/2 oz</td> -->
-<!-- 	<td id="gBEP"></td> -->
-<!-- 	<td>1 oz</td> -->
-<!-- 	<td id="gBEP"></td> -->
-<!-- 	<td>1/4 lb</td> -->
-<!-- 	<td id="gBEP"></td> -->
-<!-- 	<td>1/2 lb</td> -->
-<!-- 	<td id="gBEP"></td> -->
-<!-- 	<td>1 lb</td> -->
-<!-- 	<td id="gBEP"></td> -->
+	<tr>
+	<th></th>
+	<td>1/8 oz</td>
+	<td id="eigthOZ"></td>
+	</tr>
+	<tr>
+	<th></th>
+	<td>1/4 oz</td>
+	<td id="quarterOZ"></td>
+	</tr>
+	<tr>
+	<th></th>
+	<td>1/2 oz</td>
+	<td id="halfOZ"></td>
+	</tr>
+	<tr>
+	<th></th>
+	<td>1 oz</td>
+	<td id="oneOZ"></td>
+	</tr>
+	<tr>
+	<th></th>
+	<td>1/4 lb</td>
+	<td id="quarterLB"></td>
+	</tr>
+	<tr>
+	<th></th>
+	<td>1/2 lb</td>
+	<td id="halfLB"></td>
+	</tr>
+	<tr>
+	<th></th>
+	<td>1 lb</td>
+	<td id="oneLB"></td>
+	</tr>
 </table>
-<table>
+<table style="float:left">
 <caption>Baggie break even sizes</caption>
 <tr>
 <th></th>
@@ -69,12 +84,12 @@
 <th>Amount</th>
 	<tr>
 	<th></th>
-	<td>Nickel ($5 worth)</td>
+	<td>Nickelbag</td>
 	<td id="nickelBES"></td>
 	</tr>
 	<tr>
 	<th></th>
-	<td>Dime</td>
+	<td>Dimebag</td>
 	<td id="dimeBES"></td>
 	</tr>
 	<tr>
@@ -85,4 +100,5 @@
 </table>
 <!-- <a href="http://www.leafly.com">Leafly</a> -->
 	</body>
+</html>
 </html>
